@@ -58,4 +58,4 @@ else:
 	day2 = date2[3] + date2[4]
 year2 = date2[6] + date2[7] + date2[8] + date2[9]
 
-print("There have been ", date_dif(int(mon1), int(day1), int(year1), int(mon2), int(day2), int(year2), " days between the two dates."))
+print("The difference between the two dates is " + str(date_dif(int(mon1), int(day1), int(year1), int(mon2), int(day2), int(year2))) + " days.")
