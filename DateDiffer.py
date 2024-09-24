@@ -3,8 +3,11 @@
 Program to find how many days are between two dates (inclusive)
 
 '''
-def date_dif():
+def DateDiffer():
 	date1 = str(input("What is the start date? MM/DD/YYYY: "))
+	if len(date1) != 10:
+                print("Invalid entry.")
+                return 0
 	if date1[0] == "0":
 		curmon = int(date1[1])
 	else:
@@ -16,6 +19,9 @@ def date_dif():
 	curyear = int(date1[6] + date1[7] + date1[8] + date1[9])
 
 	date2 = str(input("What is the end date? MM/DD/YYYY: "))
+	if len(date2) != 10:
+                print("Invalid entry.")
+                return 0
 	if date2[0] == "0":
 		month2 = int(date2[1])
 	else:
@@ -55,4 +61,3 @@ def date_dif():
 			curmon += 1
 			total += 1
 	return total
-print(date_dif())
