@@ -1,0 +1,1 @@
+This file only functions when the pips pyautogui, pydirectinput, time, keyboard, random, win32api, win32con, time, and ahk are installed.
