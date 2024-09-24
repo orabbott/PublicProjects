@@ -18,7 +18,6 @@ while(True):
 		print('Please enter "Crimson" or "Blue". ')
 spent = input("Have you spent any dining dollars yet? (Y/N): ").upper()
 if spent == "Y" or spent == "YES":
-	print("yes")
 	amount = float(input("How many dining dollars do you currently have?: "))
 
 def date_differ(month1, day1, year1, month2, day2, year2):
