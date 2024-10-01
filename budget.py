@@ -5,6 +5,7 @@ Program to assist Jayhawks in budgeting their dining dollars.
 '''
 
 amount = 0
+RECOMMENDED_RATE = 19.03
 
 while(True):
 	plan = input("Are you using the Crimson or Blue plan?: ")
@@ -19,7 +20,6 @@ while(True):
 spent = input("Have you spent any dining dollars yet? (Y/N): ").upper()
 if spent == "Y" or spent == "YES":
 	amount = float(input("How many dining dollars do you currently have?: "))
-
 def date_differ(month1, day1, year1, month2, day2, year2):
 	total = 0
 	curday = day1
@@ -66,3 +66,4 @@ else:
 days = date_differ(int(mon), int(day), int(date[6] + date[7] + date[8] + date[9]), 12, 20, 2024)
 
 print("You should be spending about $" + str(round(amount / days, 2)) + " per day.")
+print("It is recommended that you should have about $" + str(RECOMMENDED_RATE * days), " left.")
